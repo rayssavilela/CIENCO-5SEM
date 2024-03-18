@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Pessoal</title>
+    <link rel="icon" type="image/x-icon" href="image/kate-mishchankova-Wk-lp8xjIio-unsplash.jpg">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body id="fale">
+    <div>
+        <hr>
+        <br>
+        <nav> <!-- isso é um comentário -->
+            <a href="index.html">HOME</a> |
+            <a href="currículo.html">CURRÍCULO</a> |
+            <a href="viagens.html">VIAGENS</a> |
+            <a href="faleconosco.html">FALE CONOSCO</a>
+        </nav>
+        <br>
+        <hr>
+    </div>
+    <div>
+        <H1 class="formatacaoPadrao"> Cadastro de Visitantes</H1>
+
+        <form action="cadastroVisitante.php" method="post">
+
+            <div>
+                <p>
+                    <label for="nome">Nome completo do visitante:</label>
+                    <input type="text" name="nome" id="nome" maxlength="40" size="40"
+                    placeholder="Digite seu nome completo" required="true">*
+
+                    <label for="idade">Idade</label>
+                    <input type="number" name="Idade" id="Idade"
+                    placeholder="Informe sua Idade"
+                    required min="14" max="150" size="20">*
+
+                    <label for="Data">Data de Nascimento</label>
+                    <input type="date" name="Data" id="Data" required
+                    max="2010-12-31" min="1900-01-01">
+                </p>
+
+                <p>
+                    <label for="Foto">Foto</label>
+                    <input type="file" name="Foto" id="Foto">
+                </p>
+
+                <p>
+                    <label for="EstadoCivil">Estado Civil:</label>
+                    <input type="radio" name="EstadoCivil" id="EstadoCivil" 
+                    value="Casado"> Casado(a)
+                    <input type="radio" name="EstadoCivil" id="EstadoCivil" 
+                    value="Solteiro"> Solteiro(a)
+                    <input type="radio" name="EstadoCivil" id="EstadoCivil" 
+                    value="Divorciado"> Divorciado(a)
+                    <input type="radio" name="EstadoCivil" id="EstadoCivil" 
+                    value="Viuvo"> Viúvo(a)
+                </p>
+
+                <p>
+                    <label for="Usuario">Nome de Usuario</label>
+                    <input type="text" name="Usuario" id="Usuario" size="40"
+                    placeholder="Defina seu nome de usuario" maxlength="40" 
+                    required="true">*
+
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" 
+                    placeholder="Crie sua senha de login" 
+                    required maxlength="15" size="20">* 
+                </p>
+
+                <p>
+                    <label for="pesquisa">O que deseja pesquisar?</label>
+                    <input type="search" name="pesquisa" id="pesquisa" size="40"
+                    placeholder="Digite sua busca">
+                </p>
+
+                <p>
+                    <label for="Celular">Celular</label>  
+                    <input type="tel" name="Celular" id="Celular" 
+                    placeholder="(XX)XXXXX-XXXX" maxlength="14"
+                    size="20">  
+                    
+                    <label for="TelRes">Telefone Residencial</label>  
+                    <input type="tel" name="TelRes" id="TelRes" 
+                    placeholder="(XX)XXXX-XXXX" maxlength="13"
+                    size="20">  
+                </p>
+
+                <p>
+                    <label for="E-mail">E-mail</label>
+                    <input type="email" name="E-mail" id="E-mail" 
+                    placeholder="email@hotmail.com" size="40" maxlength="100">
+                </p>
+
+                <p>
+                    <label for="url">Linkedin</label>
+                    <input type="url" name="url" id="url" 
+                    placeholder="https://www.example.com.br/" size="40">
+                </p>
+
+                <p>
+                    <label for="cabelo">Selecione a cor do seu cabelo:</label>
+                    <input type="color" name="cabelo" id="cabelo">
+                </p>
+
+                <p>
+                    <label for="informacao">Escreva sobre você:</label><br>
+                    <textarea name="informacao" id="informacao" cols="30" rows="10" 
+                    style="resize: none;">
+                    </textarea>
+                </p>
+
+                <p>
+                    <label for="time">Qual time que torce?</label>
+                    <select name="time" id="time">
+                        <option value="Corinthians">Corinthians</option>
+                        <option value="Palmeiras">Palmeiras</option>
+                        <option value="Vasco">Vasco</option>
+                        <option value="São Paulo">São Paulo</option>
+                    </select>
+                </p>
+
+                <P>
+                    <label for="contato">Como Deseja ser contactado?</label>
+                    <input type="checkbox" name="whatsapp" id="contato" 
+                    value="whatsapp">Whatsapp
+                    <input type="checkbox" name="E-mail" id="contato" 
+                    value="E-mail">E-mail
+                    <input type="checkbox" name="telefone" id="contato" 
+                    value="telefone">Telefone
+                    <input type="checkbox" name="sms" id="contato" 
+                    value="sms">SMS  
+                </P>
+
+                <p>
+                    <button class="formatacaoPadrao" type="submit">Concluir</button>
+                    <button class="formatacaoPadrao" type="reset">Limpar</button>
+                </p>
+
+
+
+            </div>
+
+        </form>
+    </div>
+    <div>
+        <footer>
+            <p>Author: Rayssa Ferreira Vilela</p>
+            <address>Rua dos Estudantes s/n Cachoeira de Cima - Mogi Guaçu/SP</address>
+            <p>
+                <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+                <a href="https://pt-br.facebook.com/" target="_blank">Facebook</a> |
+                <a href="https://br.linkedin.com/" target="_blank">Linkedin</a> |
+                <a href="https://www.lattes.cnpq.br/" target="_blank">Lattes</a> |
+                <a href="https://github.com/rayssavilela?tab=repositories" target="_blank">Github</a> |
+                <a href="https://web.whatsapp.com/send?phone=+5519999862918" target="_blank">Whatsapp</a> |
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
