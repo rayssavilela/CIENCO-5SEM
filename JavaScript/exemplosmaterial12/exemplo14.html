@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17/05 Exemplo 14</title>
+</head>
+<body>
+    
+    <h1>Exemplo 14</h1>
+
+    
+    Digite seu nome: <input type="text" id="nome" onchange="upper()">
+
+    <p>Saia do compo de entrada, seu nome será transformado em maiúsculo</p>
+
+    <script>
+        function upper(){
+            var x = document.getElementById("nome");
+            x.value = x.value.toUpperCase();
+        }        
+    </script>
+    
+</body>
+</html>

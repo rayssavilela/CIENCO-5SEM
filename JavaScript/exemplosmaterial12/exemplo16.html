@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17/05 Exemplo 16</title>
+</head>
+<body>
+    
+    <h1>Exemplo 16</h1>
+
+    <div onmouseover="mDown(this)" onmouseout="mUp(this)"
+    style="background-color: #D94A38;width: 90px;height: 20px; padding: 40px;">
+    CLIQUE AQUI
+</div> 
+
+    <script>
+        
+        function mDown(obj){
+            obj.style.backgroundColor = "#1ec5e5";
+            obj.innerHTML = "SOLTA AGORA";
+        }
+        function mUp(obj){
+            obj.style.backgroundColor = "#D94A38";
+            obj.innerHTML = "CLIQUE AQUI";
+        }
+
+    </script>
+    
+</body>
+</html>

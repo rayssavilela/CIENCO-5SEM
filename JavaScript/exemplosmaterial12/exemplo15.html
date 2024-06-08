@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>17/05 Exemplo 15</title>
+</head>
+<body>
+    
+    <h1>Exemplo 15</h1>
+
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"
+    style="background-color: #D94A38;width: 120px;height: 40px; padding: 40px;">
+    PASSE O MOUSE AQUI
+</div> 
+
+    <script>
+        
+        function mOver(obj){
+            obj.innerHTML = "OBRIGADO";
+        }
+        function mOut(obj){
+            obj.innerHTML = "PASSE O MOUSE AQUI";
+        }
+
+    </script>
+    
+</body>
+</html>

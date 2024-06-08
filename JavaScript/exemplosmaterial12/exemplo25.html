@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>24/05 Exemplo 25</title>
+
+  <style>
+    #div1 {
+      background-color: red;
+      border: 1px solid;
+      padding: 50px;
+      color: white;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="div1">
+    <h1>Exemplo 25</h1>
+    <h2>O método removeEventListener() remove os manipuladores de eventos que foram anexados ao método
+      addEventListener()</h2>
+
+      <button onclick="removeEvento()" id="bt1">REMOVER</button>
+  </div>
+
+  <p id="demo"></p>
+
+  <script>
+
+    document.getElementById("div1").addEventListener("mousemove", adicEvento);
+
+    function adicEvento(){
+      document.getElementById("demo").innerHTML = Math.random();
+    }
+    function removeEvento(){
+      document.getElementById("div1").removeEventListener("mousemove", adicEvento);
+    }
+
+  </script>
+</body>
+</html>

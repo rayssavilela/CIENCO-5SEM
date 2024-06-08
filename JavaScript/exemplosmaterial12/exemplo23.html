@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/05 Exemplo 23</title>
+</head>
+<body>
+    
+    <h1>Exemplo 23</h1>
+    <h2>Passando valores por parâmetros com addEventListener</h2>
+
+    <button id="btn1">SOMAR/MULTIPLICAR</button>
+
+    <p id="demo"></p>
+
+
+
+    
+
+    <script>
+        
+        var n1 = 10;
+        var n2 = 10;
+      
+        document.getElementById("btn1").addEventListener("click", function() {
+          somar(n1, n2);
+        });
+
+        document.getElementById("btn1").addEventListener("mouseover", function() {
+          multiplicar(n1, n2);
+        });
+
+        function somar(a, b){
+          var resultado = a + b;
+          document.getElementById("demo").innerHTML += "A soma é: "+ resultado + "<br>";
+        }
+
+        function multiplicar(a, b){
+          var resultado = a * b;
+          document.getElementById("demo").innerHTML += "A soma é: "+ resultado + "<br>";
+        }
+      
+
+    </script>
+    
+</body>
+</html>

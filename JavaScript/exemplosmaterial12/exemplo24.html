@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/05 Exemplo 24</title>
+
+    <style>
+      #Div1,
+      #Div2{
+        background-color: coral;
+        padding: 50px;
+      }
+      #P1,
+      #P2{
+        background-color: white;
+        font-size: 20px;
+        border: 1px solid;
+        padding: 20px;
+      }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Exemplo 24</h1>
+    <h2>Bubbling x Capturing</h2>
+
+    <div id="Div1">
+      <h2>Bubbling:</h2>
+      <p id="P1">CLIQUE!</p>
+    </div><br>
+
+    
+    <div id="Div2">
+      <h2>Capturing:</h2>
+      <p id="P2">CLIQUE!</p>
+    </div>
+
+    <script>
+        
+       
+      
+        document.getElementById("P1").addEventListener("click", function() {
+          alert("Você clicou no elemento de dentro - Branco");
+        }, false);
+
+       
+        document.getElementById("Div1").addEventListener("click", function() {
+          alert("Agora executou o elemento de Fora - Laranja");
+        }, false);
+
+        
+        document.getElementById("P2").addEventListener("click", function() {
+          alert("Agora executou o elemento de dentro - Braco");
+        }, true);
+
+        
+        document.getElementById("Div2").addEventListener("click", function() {
+          alert("Primeiro executou o elemento de fora - Laranja");
+        }, true);
+      
+
+    </script>
+    
+</body>
+</html>

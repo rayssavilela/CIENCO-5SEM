@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/05 Exemplo 21</title>
+</head>
+<body>
+    
+    <h1>Exemplo 21</h1>
+
+    <button id="btn1">Experimente</button>
+
+    <p id="demo"></p>
+
+
+</div> 
+
+    <script>
+        
+      var x = document.getElementById("btn1");
+      x.addEventListener("mouseover", funcao1);
+      x.addEventListener("click", funcao2);
+      x.addEventListener("mouseout", funcao3);
+        
+        function funcao1(){
+            document.getElementById("demo").innerHTML
+            += "Função 1 executada escutando o evento mouseover!<br>";
+        }
+
+        function funcao2(){
+            document.getElementById("demo").innerHTML
+            += "Função 2 executada escutando o evento click!<br>";
+        }
+        function funcao3(){
+            document.getElementById("demo").innerHTML
+            += "Função 3 executada escutando o evento mouseout!<br>";
+        }
+
+
+    </script>
+    
+</body>
+</html>
