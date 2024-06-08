@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Sobre Carros Autonomos</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Carros Autonomos</h1>
+                <h2>Eles estão chegando</h2>
+                <h2>A INTELIGENCIA ARTIFICIAL APLICADA EM CARROS AUTONOMOS</h2>
+            </hgroup>
+            <img id="icone" src="image/carro1.jpg" style="width: 170px; height: auto;" alt="carro1">
+            <nav id="menu">
+                <h1>Menu principal</h1>
+                <ul>
+
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a href="projeto.html">Projeto</a></li>
+                    <li> <a href="fotos.html">Fotos</a></li>
+                    <li> <a href="video.html">Videos</a></li>
+                    <li> <a href="fale.html">Fale Conosco</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <section id="corpofull">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h1>Saiba tudo sobre os Carros Autônomos</h1>
+                        <h2>CIENCO - FMPFM</h2>
+                        <H3>Atualizado em ??/??/????</H3>
+                    </hgroup>
+                </header>
+                <form method="post" id="contatos" action="cadastro.php">
+                    <fieldset id="usuario">
+                        <legend>Identificação do Usuário</legend>
+                        <p>Nome:<input type="text" name="txtnome" id="nome" size="50" maxlength="50"
+                                placeholder="Nome Completo"></p>
+                        <p>Senha:<input type="password" name="txtSenha" id="senha" size="8" maxlength="8"
+                                placeholder="8 Dígitos"></p>
+                        <p>E-mail:<input type="email" name="txtEmail" id="email" size="50" maxlength="50"
+                                placeholder="Digite seu E-mail"></p>
+                        <fieldset id="genero">
+                            <legend>Gênero:</legend>
+                            <input type="radio" name="textGenero" id="masc" />
+                            <label for="masc">Masculino
+                                <input type="radio" name="textGenero" id="fem">
+                                <label for="fem">Feminino
+                                    <input type="radio" name="textGenero" id="naq">
+                                    <label for="naq">Não quero informar
+                        </fieldset>
+                        <fieldset id="endereco">
+                            <legend>Endereço do Usuário</legend>
+                            <p>Longradouro:<input type="text" name="txtRua" id="rua" size="50" maxlength="50"
+                                    placeholder="Rua,Av,..."></p>
+                            <p>Número:<input type="number" name="txtNum" id="num" min="0" maxlength="999999"
+                                    placeholder="Número da Casa"></p>
+                            <p>Estado:<select name="test" id="cest">
+                                    <optgroup label="Região Sudeste">
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option selected value="SP">São Paulo</option>
+                                        <option value="MG">Minas Gerais</option>
+                                    </optgroup>
+                                    <optgroup label="Região Sul">
+                                        <option value="PR">Paraná</option>
+                                        <option value="SC">Santa Catarina</option>
+                                        <option value="RS">Rio Grande do Sul</option>
+                                    </optgroup>
+                                </select>
+                            <p>Cidade: <input type="text" name="txtCid" id="cid" placeholder="Sua Cidade"
+                                    list="cidades"></p>
+                            <p>Data de Nascimento:<input type="date" name="txtNasc" id="nasc"></p>
+                            <p>
+                                <input type="submit" value="ENVIAR">
+                                <input type="submit" value="LIMPAR">
+                            </p>
+                        </fieldset>
+                </form>
+
+                <footer id="rodape"><br><br><br><br>
+                    <p>Copyright 2024 - by 5º SEM - CIENCO
+                        <br>
+                        <a href="#" target="_blank">Facebook</a>
+                    </p>
+                </footer>
+    </div>
+</body>
+
+</html>
